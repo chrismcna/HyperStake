@@ -7,12 +7,12 @@ FROM ubuntu:16.04
 
 RUN apt-get update && \ 
 apt-get -y install --no-install-recommends git wget build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev automake ca-certificates && \ 
-cp /usr/lib/x86_64-linux-gnu/libboost_system.so.1.58.0 /usr/lib/libboost_system.so.1.58.0 && \
-cp /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.58.0 /usr/lib/libboost_filesystem.so.1.58.0 && \
-cp /usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.58.0 /usr/lib/libboost_program_options.so.1.58.0 && \
-cp /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.58.0 /usr/lib/libboost_thread.so.1.58.0 && \
-cp /lib/x86_64-linux-gnu/libssl.so.1.0.0 /lib/libssl.so.1.0.0 && \
-cp /lib/x86_64-linux-gnu/libcrypto.so.1.0.0 /lib/libcrypto.so.1.0.0 && \
+cp /usr/lib/x86_64-linux-gnu/libboost_system.so.* /usr/lib/ && \
+cp /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.* /usr/lib/ && \
+cp /usr/lib/x86_64-linux-gnu/libboost_program_options.so.* /usr/lib/ && \
+cp /usr/lib/x86_64-linux-gnu/libboost_thread.so.* /usr/lib/ && \
+cp /lib/x86_64-linux-gnu/libssl.so.* /lib/ && \
+cp /lib/x86_64-linux-gnu/libcrypto.so.* /lib/ && \
 cd ~/ && \
 wget http://download.oracle.com/berkeley-db/db-4.8.30.tar.gz && \
 tar xvf db-4.8.30.tar.gz && \ 
