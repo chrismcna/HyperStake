@@ -10,7 +10,7 @@ For windows, download the docker installer and install it
 Second step - Install HyperStake
 depending on your linux hardware i have built a number of images
 
-Raspberry Pi/ARM: docker run --name hyperstake -v ~/.HyperStake:/root/.HyperStake  -it -d -p 18775:18775 mcna/hyperstake:v1.1.4-raspberry
+Raspberry Pi/ARM: docker run --name hyperstake -v ~/.HyperStake:/root/.HyperStake  -it -d -p 18775:18775 mcna/hyperstake:v1.1.4-raspbian
 
 ARM7: docker run --name hyperstake -v ~/.HyperStake:/root/.HyperStake  -it -d -p 18775:18775 mcna/hyperstake:v1.1.4-armv7hf-debian
 
