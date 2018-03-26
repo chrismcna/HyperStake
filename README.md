@@ -1,5 +1,5 @@
 # HyperStake
-HyperStake Docker file to create docker images of hyper stake
+HyperStake Docker file to create docker images of hyperstake
 
 
 
