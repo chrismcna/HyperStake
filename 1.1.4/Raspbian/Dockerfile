@@ -6,6 +6,7 @@
 
 FROM resin/rpi-raspbian
 
+RUN [ "cross-build-start" ]
 
 RUN sudo apt-get update && \ 
 sudo apt-get -y install --no-install-recommends git wget build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev automake ca-certificates && \
@@ -40,7 +41,7 @@ sudo apt-get -u remove  && \
 sudo apt-get autoremove && \
 sudo apt-get clean && rm -rf /var/lib/apt/lists/*
 
-
+RUN [ "cross-build-end" ]
 
 CMD hyperstaked 
 
