@@ -1,12 +1,12 @@
-#Build with command: docker build -t mcna/hyperstake:v1.1.4-raspberry .
+#Build with command: docker build -t mcna/hyperstake:v1.1.4-raspbian .
 #Once built run with command
-#Linux: docker run --name hyperstake -v ~/.HyperStake:/root/.HyperStake  -it -d -p 18775:18775 mcna/hyperstake:v1.1.4-raspberry
-#Windows: docker run --name hyperstake -v %AppData%\HyperStake:/root/.HyperStake  -it -d -p 18775:18775 mcna/hyperstake:v1.1.4-raspberry
+#Linux: docker run --name hyperstake -v ~/.HyperStake:/root/.HyperStake  -it -d -p 18775:18775 mcna/hyperstake:v1.1.4-raspbian
+#Windows: docker run --name hyperstake -v %AppData%\HyperStake:/root/.HyperStake  -it -d -p 18775:18775 mcna/hyperstake:v1.1.4-raspbian
 
 
 FROM resin/rpi-raspbian
 
-RUN [ "cross-build-start" ]
+
 RUN sudo apt-get update && \ 
 sudo apt-get -y install --no-install-recommends git wget build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev automake ca-certificates && \
 cp /usr/lib/arm-linux-gnueabihf/libboost_system.so.* /usr/lib/ && \
@@ -40,7 +40,7 @@ sudo apt-get -u remove  && \
 sudo apt-get autoremove && \
 sudo apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN [ "cross-build-end" ]
+
 
 CMD hyperstaked 
 
