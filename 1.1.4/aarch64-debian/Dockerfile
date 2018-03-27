@@ -43,6 +43,6 @@ sudo apt-get clean && rm -rf /var/lib/apt/lists/*
 
 RUN [ "cross-build-end" ]
 
-CMD bash 
+CMD hyperstaked 
 
 
