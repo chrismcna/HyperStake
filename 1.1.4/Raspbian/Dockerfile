@@ -31,6 +31,7 @@ git clone --branch "v1.1.4.1" --single-branch https://github.com/hyperstake/Hype
 cd HyperStake && ./autogen.sh  && \
 ./configure --disable-tests CPPFLAGS="-I/usr/local/BerkeleyDB.4.8/include -O2" LDFLAGS="-L/usr/local/BerkeleyDB.4.8/lib" --with-gui=no && \
 make && \ 
+strip /root/HyperStake/src/hyperstaked && \ 
 cp /root/HyperStake/src/hyperstaked /usr/local/sbin/hyperstaked && \ 
 cd ~/ && \
 rm -rf HyperStake && \
