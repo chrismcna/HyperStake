@@ -41,6 +41,8 @@ rpcuser=##Random user##
 
 rpcpassword=##Random password##
 
+## Four step - Start HyperStake
+start HyperStake with command: docker start hyperstake
 
 ## Interacting with HyperStake
 to interact with hyperstake you will need to use the "docker exec" command, here are some examples:
