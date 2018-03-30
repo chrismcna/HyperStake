@@ -21,6 +21,6 @@ cd HyperStake
 ./autogen.sh 
 ./configure --disable-tests CPPFLAGS="-I/usr/local/BerkeleyDB.4.8/include -O2" LDFLAGS="-L/usr/local/BerkeleyDB.4.8/lib" --with-gui=no 
 make 
-cp ~/HyperStake/src/hyperstaked /usr/local/sbin/hyperstaked 
+sudo cp ~/HyperStake/src/hyperstaked /usr/local/sbin/hyperstaked 
 cd ~/ 
 mkdir .HyperStake/ 
