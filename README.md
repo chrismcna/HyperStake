@@ -29,7 +29,7 @@ Windows: docker run --name hyperstake -v %AppData%\HyperStake:/root/.HyperStake 
 ### Windows: 
 go to "%AppData%\HyperStake" and create a file called "HyperStake.conf"
 
-### Linux
+### Ubuntu/Raspberry Pi/ARM/Linux
 create a file called "~/.HyperStake/HyperStake.conf".
 
 command: vi ~/.HyperStake/HyperStake.conf
