@@ -24,8 +24,20 @@ Ubuntu: docker run --name hyperstake -v ~/.HyperStake:/root/.HyperStake  -it -d 
 
 Windows: docker run --name hyperstake -v %AppData%\HyperStake:/root/.HyperStake  -it -d -p 18775:18775 mcna/hyperstake:v1.1.4-ubuntu
 
-## HyperStake data directory
-the commands above will put the HyperStake data folder in the default location for the OS, e.g. windows "%AppData%\HyperStake", linux "~/.HyperStake"
+
+## Third step - creating HyperStake.conf
+### Windows: 
+go to "%AppData%\HyperStake" and create a file called "HyperStake.conf"
+
+### Linux
+go to "~/.HyperStake" and create a file called "HyperStake.conf".
+command: vi ~/.HyperStake/HyperStake.conf
+
+### HyperStake.conf content
+Write the text below into the "HyperStake.conf" file but change the user and password:
+rpcuser=<Random user>
+rpcpassword=<Random password>
+
 
 ## Interacting with HyperStake
 to interact with hyperstake you will need to use the "docker exec" command, here are some examples:
