@@ -10,7 +10,7 @@ To install docker on any linux computer run: curl -sSL https://get.docker.com | 
 For windows, download the docker installer and install it
 
 
-##Second step - Install HyperStake
+## Second step - Install HyperStake
 
 depending on your linux hardware i have built a number of images
 
@@ -24,10 +24,10 @@ Ubuntu: docker run --name hyperstake -v ~/.HyperStake:/root/.HyperStake  -it -d 
 
 Windows: docker run --name hyperstake -v %AppData%\HyperStake:/root/.HyperStake  -it -d -p 18775:18775 mcna/hyperstake:v1.1.4-ubuntu
 
-##
+## HyperStake data directory
 the commands above will put the HyperStake data folder in the default location for the OS, e.g. windows "%AppData%\HyperStake", linux "~/.HyperStake"
 
-
+## Interacting with HyperStake
 to instact with hyperstake you will need to use the "docker exec" command, here are some examples:
 
 docker exec hyperstake hyperstaked getinfo
