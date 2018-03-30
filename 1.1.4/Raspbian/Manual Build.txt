@@ -1,7 +1,7 @@
 
 #Install build tools and dependencies
 sudo apt-get update
-sudo apt-get -y install --no-install-recommends git wget build-essential libtool autotools-dev autoconf pkg-config libssl-dev libboost-all-dev automake ca-certificates 
+sudo apt-get -y install --no-install-recommends git wget build-essential libtool autotools-dev autoconf pkg-config libssl1.0-dev libboost-all-dev automake ca-certificates 
 
 #Download berkeleyDb, build and install
 cd ~/ 
