@@ -3,7 +3,7 @@ HyperStake Docker file to create docker images of hyperstake
 
 
 
-##First step - Install docker
+## First step - Install docker
 
 To install docker on any linux computer run: curl -sSL https://get.docker.com | sh
 
