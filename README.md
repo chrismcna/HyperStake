@@ -61,7 +61,7 @@ rpcuser=##Random user##
 
 rpcpassword=##Random password##
 
-## Four step - Start HyperStake
+## Fourth step - Start HyperStake
 start HyperStake with command:
 ```
 docker start hyperstake
