@@ -28,7 +28,7 @@ Windows: docker run --name hyperstake -v %AppData%\HyperStake:/root/.HyperStake 
 the commands above will put the HyperStake data folder in the default location for the OS, e.g. windows "%AppData%\HyperStake", linux "~/.HyperStake"
 
 ## Interacting with HyperStake
-to instact with hyperstake you will need to use the "docker exec" command, here are some examples:
+to interact with hyperstake you will need to use the "docker exec" command, here are some examples:
 
 docker exec hyperstake hyperstaked getinfo
 
