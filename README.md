@@ -31,11 +31,14 @@ go to "%AppData%\HyperStake" and create a file called "HyperStake.conf"
 
 ### Linux
 go to "~/.HyperStake" and create a file called "HyperStake.conf".
+
 command: vi ~/.HyperStake/HyperStake.conf
 
 ### HyperStake.conf content
 Write the text below into the "HyperStake.conf" file but change the user and password:
+
 rpcuser=<Random user>
+
 rpcpassword=<Random password>
 
 
