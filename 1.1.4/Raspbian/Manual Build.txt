@@ -11,12 +11,12 @@ cd db-4.8.30/build_unix
 ../dist/configure --enable-cxx 
 make 
 sudo make install 
-cp /usr/local/BerkeleyDB.4.8/lib/libdb-4.8.so /usr/lib/libdb-4.8.so && \
-cp /usr/local/BerkeleyDB.4.8/lib/libdb_cxx-4.8.so /usr/lib/libdb_cxx-4.8.so && \
+sudo cp /usr/local/BerkeleyDB.4.8/lib/libdb-4.8.so /usr/lib/libdb-4.8.so
+sudo cp /usr/local/BerkeleyDB.4.8/lib/libdb_cxx-4.8.so /usr/lib/libdb_cxx-4.8.so 
 cd ~/ 
 
 #Download hyperstake, build and install
-git clone --branch "v1.1.4.1" --single-branch https://github.com/hyperstake/HyperStake.git /root/HyperStake 
+git clone --branch "v1.1.4.1" --single-branch https://github.com/hyperstake/HyperStake.git ~/HyperStake 
 cd HyperStake 
 ./autogen.sh 
 ./configure --disable-tests CPPFLAGS="-I/usr/local/BerkeleyDB.4.8/include -O2" LDFLAGS="-L/usr/local/BerkeleyDB.4.8/lib" --with-gui=no 
