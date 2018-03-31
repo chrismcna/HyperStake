@@ -56,10 +56,10 @@ vi ~/.HyperStake/HyperStake.conf
 
 ### HyperStake.conf content
 write the text below into the "HyperStake.conf" file but change the user and password:
-
+```
 rpcuser=##Random user##
-
 rpcpassword=##Random password##
+```
 
 ## Fourth step - Start HyperStake
 start HyperStake with command:
