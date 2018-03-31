@@ -68,7 +68,6 @@ docker start hyperstake
 ```
 
 
-if you found this useful please consider sending a donation p5hqCebiutupXvkwwBKzEAqgq5qhF3um2g
 ## Interacting with HyperStake
 to interact with hyperstake you will need to use the "docker exec" command, here are some examples:
 ```
@@ -84,4 +83,4 @@ docker stop hyperstake
 docker start hyperstake
 ```
 
-donations welcome (hyp) p5hqCebiutupXvkwwBKzEAqgq5qhF3um2g
+if you found this useful please consider sending a donation p5hqCebiutupXvkwwBKzEAqgq5qhF3um2g
