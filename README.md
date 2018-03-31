@@ -83,3 +83,5 @@ docker stop hyperstake
 ```
 docker start hyperstake
 ```
+
+donations welcome (hyp) p5hqCebiutupXvkwwBKzEAqgq5qhF3um2g
